@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/chat_right_text_tv_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="50dp"
+    android:background="@drawable/chat_popo_bg_right"
+    android:textColor="#646f72"
+    android:textSize="16sp"
+    android:paddingTop="10dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:text="..."
+    android:gravity="center_vertical"/>

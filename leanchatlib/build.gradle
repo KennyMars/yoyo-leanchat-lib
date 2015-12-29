@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '21.1.2'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    //avoscloud-sdk 为 LeanCloud基础包
+    compile 'cn.leancloud.android:avoscloud-sdk:v3.12'
+    compile 'cn.leancloud.android:avoscloud-push:v3.12@aar'
+    compile 'cn.leancloud.android:Java-WebSocket:1.3.1-leancloud'
+    compile 'cn.leancloud.android:fastjson:1.1.37-leancloud'
+    compile 'org.apache.httpcomponents:httpmime:4.2.4'
+    compile 'com.loopj.android:android-async-http:1.4.6'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:cardview-v7:22.0.+'
+    compile 'com.android.support:recyclerview-v7:22.0.+'
+    compile 'com.github.stuxuhai:jpinyin:1.0'
+    compile 'org.ocpsoft.prettytime:prettytime:3.2.7.Final'
+    //compile fileTree(dir: 'libs', include: ['*.jar'])
+}

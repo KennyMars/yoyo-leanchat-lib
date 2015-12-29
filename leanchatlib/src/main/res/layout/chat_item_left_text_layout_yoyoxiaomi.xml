@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="100dp"
+    android:minHeight="60dp"
+    android:orientation="vertical"
+    android:background="@drawable/chat_popo_bg_left">
+
+    <TextView
+        android:id="@+id/chat_left_text_tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:text="..."
+        android:textSize="16sp"
+        android:gravity="center_vertical" />
+    <TextView
+        android:id="@+id/chat_btn"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/chat_common_blue"
+        android:text="立刻报名"
+        android:textSize="16sp"
+        android:background="@drawable/chat_popo_bg_left_btn"
+        android:gravity="center_vertical"/>
+</LinearLayout>

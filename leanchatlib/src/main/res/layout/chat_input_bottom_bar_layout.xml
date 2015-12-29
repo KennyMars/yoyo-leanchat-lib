@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/chat_layout_home_bg_bottombar"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/btnParent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/btnParent_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/input_bar_btn_keyboard"
+                    android:layout_width="@dimen/chat_BottomBtnSize"
+                    android:layout_height="@dimen/chat_BottomBtnSize"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/chat_BottomBtnMargin"
+                    android:background="@drawable/chat_btn_keyboard"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/input_bar_btn_voice"
+                    android:layout_width="@dimen/chat_BottomBtnSize"
+                    android:layout_height="@dimen/chat_BottomBtnSize"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/chat_BottomBtnMargin"
+                    android:background="@drawable/chat_btn_voice_selector"
+                    android:textColor="@color/chat_base_color_text_black" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/chat_BottomBtnMargin"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <com.avoscloud.leanchatlib.view.RecordButton
+                    android:id="@+id/input_bar_btn_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="@string/chat_bottom_record_layout_pressToRecord"
+                    android:textColor="@color/chat_common_blue"
+                    android:visibility="gone" />
+
+                <com.avoscloud.leanchatlib.view.EmotionEditText
+                    android:id="@+id/input_bar_et_emotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/chat_login_edit_normal"
+                    android:imeOptions="actionSend"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chatBottomLeftLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/input_bar_btn_action"
+                android:layout_width="@dimen/chat_BottomBtnSize"
+                android:layout_height="@dimen/chat_BottomBtnSize"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/chat_btn_add_selector"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/input_bar_btn_motion"
+                android:layout_width="@dimen/chat_BottomBtnSize"
+                android:layout_height="@dimen/chat_BottomBtnSize"
+                android:layout_margin="@dimen/chat_BottomBtnMargin"
+                android:background="@drawable/chat_btn_emo_selector"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/input_bar_btn_send_text"
+                android:layout_width="@dimen/chat_BottomBtnSize"
+                android:layout_height="@dimen/chat_BottomBtnSize"
+                android:layout_marginBottom="@dimen/chat_BottomBtnMargin"
+                android:layout_marginRight="@dimen/chat_BottomBtnMargin"
+                android:layout_marginTop="@dimen/chat_BottomBtnMargin"
+                android:background="@drawable/chat_btn_send_selector"
+                android:gravity="center"
+                android:text="" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/chat_bottom_more_layout" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:gravity="center"
+    android:background="@drawable/chat_popo_bg_right">
+    <com.avoscloud.leanchatlib.view.PlayButton
+        android:id="@+id/playBtn"
+        style="@style/chat_play_btn"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        custom:left="true" />
+
+</LinearLayout>
